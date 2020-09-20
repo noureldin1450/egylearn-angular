@@ -34,7 +34,8 @@ export class SearchpageComponent implements OnInit {
   }
   
   makeiframe():void {  
-    this.iframeurl = `https://www.youtube.com/embed?listType=search&list=${this.grade} ${this.term} ${this.query} ${this.year}&origin=http://egylearn.ga`;
+    // this.iframeurl = `https://www.youtube.com/embed?listType=search&list=${this.grade} ${this.term} ${this.query} ${this.year}&origin=http://egylearn.ga`;
+    this.iframeurl = `https://www.youtube.com/embed?listType=search&list=${this.query} ${this.grade} ${this.term} ${this.year}&origin=http://egylearn.ga`;
     this.searchfor = `${this.grade} ${this.term} ${this.query} ${this.year}`;
   }
 

@@ -44,7 +44,9 @@ export class SearchComponent implements OnInit {
       this.targetUrl = `/search?year=${this.year}&term=${this.term}&grade=${this.grade}&query=${this.query}`;
   
       // this.route.navigate(['/search',{year: 2020}]);
-  
+      
+      this.query = '';
+
       window.open(this.targetUrl, '_top');
     }
   }
