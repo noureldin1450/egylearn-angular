@@ -1,0 +1,105 @@
+@import "../../../styles.scss";
+
+.search-query {
+    margin: 3rem 0px;
+    width: 100%;
+    text-align: center;
+
+    @include bglaptop {
+        font-size: 1rem;
+    }
+
+    h2 {
+        color: $black-color;
+        font-size: 1.2rem;
+        font-weight: 700;
+
+        @include bglaptop {
+            font-size: 1rem;
+        }
+        @include extra-small-mobile{
+            font-size: .9rem;
+        }
+
+        span {
+            color: $main-color;
+            font-weight: 800;
+        } //the main search query
+    }
+} //the end of the head part of the searchpage
+.video {
+    span {
+        iframe {
+            width: 80%;
+            height: 70vh;
+            border-radius: 10px;
+
+            @include bglaptop {
+                width: 100%;
+            }
+        } //the main video style
+    } //the div that wrap the main video
+
+    .small-arrow {
+        display: none;
+        @include bglaptop {
+            display: block;
+            width: 200px;
+            position: absolute;
+            right: 94px;
+            top: 174px;
+        }
+
+        @include extra-small-mobile{
+            top: 232px;
+        }
+    }
+    .arrow {
+        width: 200px;
+        position: absolute;
+        // transform: rotate(-21deg);
+        right: 126px;
+        top: 223px;
+
+        @include bglaptop {
+            display: none;
+        }
+    } //the arrow for the playlist icon
+    .warning {
+        text-align: center;
+        width: 80%;
+        margin: 0.5rem 0px;
+        font-size: 0.9rem;
+        font-weight: 700;
+
+        @include bglaptop {
+            width: 100%;
+        }
+        @include small-mobile{
+            font-size: .8rem;
+        }
+
+        a {
+            color: $main-color;
+            font-weight: 800;
+            text-decoration: underline;
+        }
+    } //warning for the search results
+} //the end of the main video
+
+.facebook-banner {
+    text-align: center;
+    width: 80%;
+    margin-top: 2rem;
+
+    @include bglaptop {
+        width: 100%;
+    }
+    iframe {
+        border-radius: 10px;
+
+        @include mobile {
+            width: 100%;
+        }
+    } //the main egylearn facebook page for like and share
+} //the div that wrap around the facebook panner

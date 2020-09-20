@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "egylearn"
+    }
+  },
+  "defaultProject": "egylearn",
+  "cli": {
+    "analytics": "dab3c369-f7ff-46bb-8eea-6ab8917f37ad"
+  }
 }

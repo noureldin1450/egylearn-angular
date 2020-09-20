@@ -1,0 +1,31 @@
+
+
+
+
+<div class="container">
+    <div class="main-search">
+        <input type="text" [(ngModel)]="query" placeholder="عنوان الدرس او الوحده">
+        <button (click)="search()"><img src="assets/Search-icon.png"></button>
+    </div>
+    <div class="additional-params">
+        <select name="grade" [(ngModel)]="grade">
+            <option value="first-grade">الاول الثانوي</option>
+            <option value="secound-grade">الثاني الثانوي</option>
+            <option value="thired-grade">الثالث الثانوي</option>
+        </select>
+        <select name="year" [(ngModel)]="year">
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+        </select>
+        <select name="term" [(ngModel)]="term">
+            <option value="first">الترم الاول</option>
+            <option value="secound">الترم الثاني</option>
+        </select>
+    </div>
+</div>
+
+
+<!-- {{ query }}
+{{ grade }} 
+{{ year }} 
+{{ term }}  -->

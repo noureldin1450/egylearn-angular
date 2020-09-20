@@ -1,0 +1,45 @@
+@import "../../../styles.scss";
+
+nav {
+    width: 100%;
+    background-color: $black-color;
+    padding: 0.3rem 0px;
+    
+    @include extra-small-mobile{
+        text-align: center;
+    }
+
+    .logo {
+        width: 150px;
+        padding-top: 0.3rem;
+
+        @include extra-small-mobile{
+            margin: 0px auto;
+        }
+    }
+
+    ul {
+        float: right;
+        padding: 1rem 0px;
+
+        @include extra-small-mobile{
+            float: none;
+            text-align: center;
+        }
+        li {
+            display: inline-block;
+            margin-left: 1rem;
+            &:first-of-type {
+                margin: 0px;
+            }
+
+            a {
+                color: $white-color;
+
+                @include small-mobile{
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+}

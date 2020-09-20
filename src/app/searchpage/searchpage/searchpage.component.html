@@ -1,0 +1,27 @@
+
+
+<div class="search-query">  
+    <div class="container">
+        <h2>
+            انت تبحث عن:
+            <br>     
+            <span [innerText]="searchfor"></span>
+        </h2>
+    </div>
+</div>
+
+<div class="video">
+    <div class="container">
+        <span [innerHTML]="iframeurl|iframe"></span>
+        <img class="arrow" src="assets/hand-arrow.png">
+        <img class="small-arrow" src="assets/small-hand-arrow.png">
+
+        <p class="warning"> 
+            .ان لم تكن نتيجه بحثك جيده يرجي ذكر تفاصيل اكثر عن المحتوي الذي تحاول الوصول اليه في البحث. <a [routerLink]="'/'">بحث اخر</a>
+        </p>
+
+        <div class="facebook-banner">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FEgyLearn-113078733879830%2F&tabs&width=800&height=100&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="500" height="100" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+        </div>
+    </div>
+</div>
