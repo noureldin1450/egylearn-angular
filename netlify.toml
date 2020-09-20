@@ -25,6 +25,10 @@ package = "@netlify/plugin-sitemap"
 		"bing"
 	]
 
+[[redirects]]
+	from = "/*"
+	to = "/index.html"
+	status = 200
 
 
 
