@@ -15,16 +15,16 @@ export class AppComponent {
 
   analyticsId:string;
 
-  constructor(private router:Router){
+  constructor(router:Router){
     this.analyticsId = environment.analyticsId;
     
     const navEndEvents = router.events.pipe(
       filter(event => event instanceof NavigationEnd),
     );
 
+    console.log(this.analyticsId);
     //for every url change
     navEndEvents.subscribe((event: NavigationEnd) =>{
-      console.log(event, this.analyticsId);
       gtag('config', this.analyticsId,{
         'page_path': event.urlAfterRedirects
       });
