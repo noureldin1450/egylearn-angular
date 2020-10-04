@@ -81,7 +81,7 @@
               "browserTarget": "egylearn:build:test"
             },
             "test": {
-              "browserTarget": "flexnet:build:test"
+              "browserTarget": "egylearn:build:test"
             }
           }
         },
