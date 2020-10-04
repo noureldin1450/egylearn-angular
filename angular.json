@@ -78,7 +78,7 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "egylearn:build:production"
+              "browserTarget": "egylearn:build:test"
             },
             "test": {
               "browserTarget": "flexnet:build:test"
