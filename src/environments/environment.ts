@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  analyticsId: 'xxxx'
+  analyticsId: 'UA-146859399-5'
 };
 
 /*
