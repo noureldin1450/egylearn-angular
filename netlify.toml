@@ -1,6 +1,7 @@
 [build]
 publish = "dist/egylearn"
-command = "npm run build"
+command = "ng build --prod"
+# command = "npm run build"
 
 [[plugins]]
 package = "@netlify/plugin-sitemap"
